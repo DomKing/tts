@@ -1033,7 +1033,7 @@ function dateFormat() {
 
 function getSsml(text, voiceName, rate, pitch, style = 'general') {
   text = escapeSSML(text);
-  return `<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" version="1.0" xml:lang="zh-CN"> <voice name="${voiceName}"> <mstts:express-as style="${style}" styledegree="1.0" role="default"> <prosody rate="${rate}%" pitch="${pitch}%" volume="50">${text}</prosody> </mstts:express-as> </voice> </speak>`;
+  return `<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" version="1.0" xml:lang="zh-CN"> <voice name="${voiceName}"> <mstts:express-as style="${style}" styledegree="1.0" role="default"> <prosody rate="2" pitch="${pitch}%" volume="200">${text}</prosody> </mstts:express-as> </voice> </speak>`;
 }
 
 function voiceList() {
