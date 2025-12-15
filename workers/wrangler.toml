@@ -6,4 +6,7 @@ compatibility_flags = [ "nodejs_compat" ]
 
 
 [vars]
-API_KEY = "zuoban"
+API_KEY = "do-not-mitm-domain"
+
+[observability]
+enabled = true
